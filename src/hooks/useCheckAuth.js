@@ -7,7 +7,7 @@ import { startLoadingNotes } from "../store/journal";
 
 export const useCheckAuth = () => {
 
-    const status = useSelector( state => state.auth );
+    const {status} = useSelector( state => state.auth );
     const dispatch = useDispatch();
   
     useEffect(() => {
