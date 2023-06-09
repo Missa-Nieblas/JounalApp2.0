@@ -16,6 +16,11 @@ export const useForm = ( initialForm = {}, formValidations = {} ) => {
 
         return true;
     }, [ formValidation ]); 
+
+    useEffect(() => {
+        setFormState( initialForm );
+    }, [ initialForm ])
+    
     
 
     const onInputChange = ({target}) => {
